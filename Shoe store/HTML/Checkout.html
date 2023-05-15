@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>The ShoeBox</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+  <section id="header" class="header">
+    <div class="nav-bar">
+      <div class="logo">
+        <a href="index.html">The ShoeBox<span>.</span></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="/HTML/index.html" class="active">Home<span>.</span></a></li>
+          <li><a href="/Html/shop.html">Shop</a></li>
+          <li><a href="/Html/Login.html">Login/Signup</a></li>
+          <li><a href="/Html/Checkout.html">Checkout</a></li>
+          <li><a href="/Html/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="checkout-row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+            <br><br>
+            <div class="checkout-row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="john@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="New York">
+    
+                <div class="checkout-row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="NY">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-50">
+                <h3>Payment</h3>
+                <div class="icon-container">
+                  <i class="fa fa-cc-paypal" style="color:navy;"></i>
+                </div>
+                <label for="emailid">Emal ID</label>
+                <input type="email" id="userid" name="userid" placeholder="Email id with Paypal">
+                <div class="checkout-row">
+                </div>
+              </div>
+    
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to Payment" class="btn">
+          </form>
+        </div>
+      </div>
+    
+      <div class="col-25">
+        <div class="container"><br><br>
+          <h4>Cart
+            <span class="price" style="color:black">
+              <i class="fa fa-shopping-cart"></i>
+              <b>4</b>
+            </span>
+          </h4>
+          <p><a href="#">Product 1</a> <span class="price">$0</span></p>
+          <p><a href="#">Product 2</a> <span class="price">$0</span></p>
+          <p><a href="#">Product 3</a> <span class="price">$0</span></p>
+          <p><a href="#">Product 4</a> <span class="price">$0</span></p>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b>$00</b></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Copyright &#169; 2023 The Shoebox. All rights reserved. Published by Lorem ipsum.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My ShoeBox</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+  <section id="header" class="header">
+    <div class="nav-bar">
+      <div class="logo">
+        <a href="index.html">The ShoeBox<span>.</span></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="/HTML/index.html" class="active">Home<span>.</span></a></li>
+          <li><a href="/Html/shop.html">Shop</a></li>
+          <li><a href="/Html/Login.html">Login/Signup</a></li>
+          <li><a href="/Html/Checkout.html">Checkout</a></li>
+          <li><a href="/Html/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="row">
+        <div class="left-sec">
+          <div class="content">
+            <h2><span>Walk</span><br>your Destiny</h2>
+            <div class="logo">
+             <input id="main-input" placeholder="Search" ></input>
+             <a href="#" class="fa fa-search" > </a>
+            </div>
+          </div>
+        </div>
+        <div class="right-sec">
+          <div class="my-car">
+            <div><img src="../images/1.png"></div>
+            <div><img src="../images/2.png"></div>
+            <div><img src="../images/3.png"></div>
+            <div><img src="../images/4.png"></div>
+            <div><img src="../images/5.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Copyright &#169; 2023 The Shoebox. All rights reserved. Published by Lorem ipsum.
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    
+  });
+
+  $(".my-car").slick({
+    autoplay: true,
+	  speed:1000,
+    dots: true,
+    customPaging : function(slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return '<a>'+(i+1)+'</a>';
+  },
+   
+});
+</script>
+</body>
+</html>
